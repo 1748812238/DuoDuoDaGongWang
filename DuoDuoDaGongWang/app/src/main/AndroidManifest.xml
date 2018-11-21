@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.duoduodagongwang">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <!-- 读联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 写联系人权限 -->
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".business.MainActivity">
+
+        </activity>
+
+        <activity android:name=".business.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".business.distribution.MineDistributionPeopleInfoActivity"/>
+
+        <activity android:name=".business.distribution.MineDistributionActivity"/>
+
+        <activity android:name=".business.sign.record.signrecord.SignSuccessRecordActivity"/>
+
+        <activity android:name=".business.distribution.DistributionMinePromotionQRCodeActivity"/>
+
+        <activity android:name=".business.mine.collection_apply_list.CollectionApplyListActivity"/>
+
+        <activity android:name=".business.sign.SignBindGroupActivity"/>
+
+        <activity android:name=".business.login.LoginActivity"/>
+
+        <activity android:name=".business.mine.resume.MineResumeActivity"/>
+
+        <activity android:name=".business.mine.personalinformation.UpdatePersonalInformationActivity"/>
+
+        <activity android:name=".business.mine.personalinformation.PersonalInformationActivity"/>
+
+        <activity android:name=".business.sign.SignMainActivity"/>
+
+        <activity android:name=".business.home.factoryinformation.FactoryInformationActivity"/>
+
+        <activity android:name=".wxapi.WXEntryActivity" android:exported="true"/>
+
+        <activity android:name=".business.mine.bankcard.MineBankCardActivity"/>
+
+        <activity android:name="com.baidu.ocr.ui.camera.CameraActivity"/>
+
+        <activity android:name=".business.select.SelectFactoryActivity" android:launchMode="singleTask"/>
+
+        <activity android:name=".business.select.SelectResultActivity"/>
+
+        <activity android:name=".business.sign.overtime.OverTimeActivity"/>
+
+        <activity android:name=".business.sign.record.leaverecord.LeaveRecordActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.administrator.duoduodagongwang"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    //retrofit+okhttp+rxjava网络访问框架
+    api 'com.google.code.gson:gson:2.6.2'
+    api 'io.reactivex:rxandroid:1.2.0'
+    api 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    api('com.squareup.retrofit2:retrofit:2.1.0') { exclude group: 'com.squareup.okhttp3' }
+    api('com.squareup.retrofit2:converter-gson:2.1.0') { exclude group: 'com.squareup.okhttp3' }
+    api('com.squareup.retrofit2:adapter-rxjava:2.1.0') {
+        exclude group: 'io.reactivex'
+        exclude group: 'com.squareup.okhttp3'
+    }
+    api 'com.android.support:design:28.0.0'
+    //底部导航栏
+    api 'com.hjm:BottomTabBar:1.2.2'
+    //图片加载框架glide
+    api 'com.github.bumptech.glide:glide:3.7.0'
+    //下拉刷新 上拉加载
+    api 'com.wuxiaolong.pullloadmorerecyclerview:library:1.1.2'
+    //Recyclerview
+    api 'com.android.support:recyclerview-v7:28.0.0'
+    //圆形ImageView
+    api 'com.makeramen:roundedimageview:2.2.1'
+    //时间选择dialog
+    api 'com.contrarywind:Android-PickerView:3.2.4'
+    //微信sdk
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
+    api 'com.ansen.http:okhttpencapsulation:1.0.1'
+    api 'org.greenrobot:eventbus:3.0.0'
+    api 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    implementation files('libs/ocr-sdk.jar')
+    implementation project(path:':ocr_ui')
+}

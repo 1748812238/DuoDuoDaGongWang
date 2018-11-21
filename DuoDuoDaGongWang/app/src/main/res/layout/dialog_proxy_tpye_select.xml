@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_proxy_type_one_dialog"
+        android:text="一级"
+        android:textSize="25dp"
+        android:paddingRight="60dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/LightGray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:id="@+id/tv_proxy_type_two_dialog"
+        android:text="二级"
+        android:textSize="25dp"
+        android:paddingRight="60dp"
+        android:paddingLeft="60dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

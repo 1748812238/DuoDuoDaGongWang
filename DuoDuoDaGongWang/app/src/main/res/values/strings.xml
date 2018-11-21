@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">多多打工网</string>
+
+    <string-array name="spingsex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <string name="home_page_service">我要\n咨询</string>
+</resources>

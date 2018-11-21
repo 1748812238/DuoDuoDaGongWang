@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/titlebar"/>
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+        android:layout_below="@+id/cl_title_bar"
+        android:id="@+id/pmrv_home_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:orientation="vertical">
+
+    </com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView>
+
+    <LinearLayout
+        android:id="@+id/ll_service_home_page"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/circular_for_home_page"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentRight="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="我要"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="咨询"
+                android:textSize="12dp"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

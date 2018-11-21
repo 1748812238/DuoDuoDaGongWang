@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/rl_main_activity"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hjm.bottomtabbar.BottomTabBar
+        android:id="@+id/bottom_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:tab_bar_background="#FFFFFF"
+        app:tab_divider_background="#373737"
+        app:tab_font_size="4dp"
+        app:tab_img_font_padding="0dp"
+        app:tab_img_height="8dp"
+        app:tab_img_width="8dp"
+        app:tab_isshow_divider="true"
+        app:tab_padding_bottom="1dp"
+        app:tab_padding_top="1dp"
+        app:tab_selected_color="@color/RoyalBlue"
+        app:tab_unselected_color="#282828"
+        >
+    </com.hjm.bottomtabbar.BottomTabBar>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_distribution_main"
+        android:src="@mipmap/distribution_unselect"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_distribution_select"
+        android:src="@mipmap/distribution_select"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="4dp"
+        android:layout_width="62dp"
+        android:layout_height="77dp" />
+8
+</RelativeLayout>

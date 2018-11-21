@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/titlebar"/>
+    <TextView
+        android:text="所在项目组/公司："
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_rectangle_blackwhite_bg"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <EditText
+            android:id="@+id/et_bind_group"
+            android:background="@null"
+            android:hint="所在项目组/公司"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/ll_bind_group"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_rectangle_blue_bg"
+        android:gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="40dp">
+
+        <TextView
+            android:text="确定"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

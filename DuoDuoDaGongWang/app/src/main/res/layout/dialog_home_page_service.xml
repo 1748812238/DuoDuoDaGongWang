@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_rectangle_white"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_qq_hps_dialog"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            app:riv_oval="true"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/dialog_hps_qq_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:text="QQ咨询"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/LightGray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_phone_hps_dialog"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/dialog_hps_phone_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:text="电话咨询"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
